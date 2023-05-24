@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-image: linear-gradient(to right, violet, lightblue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading{
+    font-family: 'Roboto';
+    font-size: 45px;
+    font-weight: 800;
+    color: brown;
+    margin-bottom: 50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.each-container{
+    background-color: lightgoldenrodyellow;
+    width:130px;
+    height:80px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    padding: 10px;
+    box-shadow:3px 3px 2px 2px #000;
+    border-radius: 8px;
+}
+
+.para-heading{
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 800;
+    color: blue;
+}
+
+.para-count{
+    font-family: 'Roboto';
+    font-size: 32px;
+    margin-top: 10px;
+    font-weight: 600;
+    color:red;
+}
+
+.visible{
+    display: none;
+}
+
+.content-area{
+    background-color: lightcoral;
+    height: 10vh;
+    width:600px;
+    margin-top: 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color:aliceblue;
+}
+
+.input-text{
+    width: 600px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.buttons-container{
+    width:300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.start-btn{
+    font-family: 'Roboto';
+    font-size: 13px;
+    color:white;
+    font-weight: 600;
+    background-color: green;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+.finish-btn{
+    font-family: 'Roboto';
+    font-size: 13px;
+    color:white;
+    font-weight: 600;
+    background-color: blue;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+.rese-btn{
+    font-family: 'Roboto';
+    font-size: 13px;
+    color:white;
+    font-weight: 600;
+    background-color: tomato;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    outline: none;
+    cursor: pointer;
+}

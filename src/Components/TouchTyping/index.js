@@ -2,10 +2,8 @@ import { Component } from "react";
 import './style.css';
 
 let timerId;
-
 let inputTextLength;
 let quoteLength;
-
 let typingWords = [
 "asdfghjkl; asdfghjkl; asdfghjkl; a;sldkfjgh a;sldkfjgh a;sldkfjgh ghfjdksla;",
 "ghfjdksla; ghfjdksla; asa asa ada ada afa afa aga aga aha aha aja aja aka;",
@@ -30,7 +28,7 @@ class TouchTyping extends Component{
     }
 
     timeLeft = () => {
-        this.setState((prevState) => ({counter: prevState.counter - 1, timeElapsed: prevState.timeElapsed + 1}));
+        this.setState((prevState) => ({counter: prevState.counter - 1}));
     }
 
     startTimerCount = () => {
@@ -92,7 +90,7 @@ class TouchTyping extends Component{
     onClickResetButton = () => {
         clearInterval(timerId);
         let randomIndex = Math.floor(Math.random() * typingWords.length)
-        this.setState({initialQuoteIndex:typingWords[randomIndex],counter:300,timeElapsed:0,errors:0, totalErrors:0,characterTyped:0, inputText:'',wpm:0});
+        this.setState({initialQuoteIndex:typingWords[randomIndex],counter:300,timeElapsed:0,errors:0, totalErrors:0,characterTyped:0, inputText:'',wpm:0, accuracy:0});
     }
 
     render(){

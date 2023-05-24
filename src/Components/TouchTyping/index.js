@@ -22,11 +22,8 @@ class TouchTyping extends Component{
 
     state = {
         counter: 300,
-        timeElapsed:0,
         accuracy:0,
         characterTyped:0,
-        errors: 0,
-        totalErrors: 0,
         initialQuoteIndex: typingWords[0],
         inputText: '',
         wpm:0,
